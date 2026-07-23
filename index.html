@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Identity Suite Pro - Global Identity & CPA Marketing Toolkit</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;700&family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- FontAwesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Google AdSense Main Global Script -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4741085747836613" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo" id="main-logo-link" title="Click to reload page">
+                <i class="fa-solid fa-id-card-clip logo-icon"></i>
+                <span class="logo-text">Identity Suite <span class="accent">PRO</span></span>
+            </a>
+            <nav>
+                <ul class="nav-links">
+                    <li class="active" data-tab="generator"><a href="#generator"><i class="fa-solid fa-user-gear"></i> Identity Engine</a></li>
+                    <li data-tab="google-sheet"><a href="#google-sheet"><i class="fa-solid fa-file-excel"></i> Live Google Sheet</a></li>
+                    <li data-tab="user-agent"><a href="#user-agent"><i class="fa-solid fa-laptop-code"></i> User Agent Studio</a></li>
+                    <li data-tab="notepad"><a href="#notepad"><i class="fa-solid fa-file-code"></i> Notepad++ Web</a></li>
+                    <li data-tab="faq"><a href="#faq"><i class="fa-solid fa-circle-question"></i> FAQ & Guide</a></li>
+                </ul>
+            </nav>
+            <div class="nav-actions">
+                <button id="quick-save-btn" class="btn btn-secondary" title="Save current profile to Notepad++">
+                    <i class="fa-solid fa-bookmark"></i> Save Profile
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Container -->
+    <main class="main-container">
+
+        <!-- TAB 1: NAME GENERATOR -->
+        <section id="generator-tab" class="tab-content active">
+            <div class="page-title-row">
+                <div class="page-title">
+                    <h1>Real World Identity Generator</h1>
+                    <p>Generate authentic profile identities using real-world country-specific patterns.</p>
+                </div>
+                <!-- Mode Switcher: Normal (Cards) vs WorkOnly (Classic) -->
+                <div class="mode-switcher-box">
+                    <span class="mode-label">Select Mode:</span>
+                    <button type="button" id="btn-mode-normal" class="btn btn-sm btn-primary active"><i class="fa-solid fa-table-cells-large"></i> Normal (Cards)</button>
+                    <button type="button" id="btn-mode-workonly" class="btn btn-sm btn-outline"><i class="fa-solid fa-align-left"></i> WorkOnly (Classic)</button>
+                </div>
+            </div>
+
+            <!-- Top Leaderboard Ad Slot (728x90) -->
+            <div class="ad-container ad-leaderboard">
+                <div class="ad-label">Advertisement</div>
+                
+                <!-- Google AdSense Live Code Block 1: Top Leaderboard (7803741463) -->
+                <div class="ad-code-wrapper">
+                    <ins class="adsbygoogle"
+                         style="display:block"
+                         data-ad-client="ca-pub-4741085747836613"
+                         data-ad-slot="7803741463"
+                         data-ad-format="auto"
+                         data-full-width-responsive="true"></ins>
+                    <script>
+                         (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                </div>
+            </div>
+
+            <!-- Filter Controls -->
+            <div class="card filter-card">
+                <form id="generator-form">
+                    <div class="filter-group">
+                        <label for="gen-gender"><i class="fa-solid fa-venus-mars"></i> Gender</label>
+                        <select id="gen-gender">
+                            <option value="random" selected="selected">Random</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select>
+                    </div>
+
+                    <div class="filter-group">
+                        <label for="gen-nameset"><i class="fa-solid fa-language"></i> Name Set (37 Sets)</label>
+                        <select id="gen-nameset">
+                            <option value="american" selected="selected">American</option>
+                            <option value="arabic">Arabic</option>
+                            <option value="australian">Australian</option>
+                            <option value="brazil">Brazil</option>
+                            <option value="chechen">Chechen (Latin)</option>
+                            <option value="chinese">Chinese</option>
+                            <option value="chinesetrad">Chinese (Traditional)</option>
+                            <option value="croatian">Croatian</option>
+                            <option value="czech">Czech</option>
+                            <option value="danish">Danish</option>
+                            <option value="dutch">Dutch</option>
+                            <option value="england">England/Wales</option>
+                            <option value="eritrean">Eritrean</option>
+                            <option value="finnish">Finnish</option>
+                            <option value="french">French</option>
+                            <option value="german">German</option>
+                            <option value="greenland">Greenland</option>
+                            <option value="hispanic">Hispanic</option>
+                            <option value="hobbit">Hobbit</option>
+                            <option value="hungarian">Hungarian</option>
+                            <option value="icelandic">Icelandic</option>
+                            <option value="igbo">Igbo</option>
+                            <option value="italian">Italian</option>
+                            <option value="japanese">Japanese</option>
+                            <option value="japaneseanglicized">Japanese (Anglicized)</option>
+                            <option value="klingon">Klingon</option>
+                            <option value="ninja">Ninja</option>
+                            <option value="norwegian">Norwegian</option>
+                            <option value="persian">Persian</option>
+                            <option value="polish">Polish</option>
+                            <option value="russian">Russian</option>
+                            <option value="russiancyrillic">Russian (Cyrillic)</option>
+                            <option value="scottish">Scottish</option>
+                            <option value="slovenian">Slovenian</option>
+                            <option value="swedish">Swedish</option>
+                            <option value="thai">Thai</option>
+                            <option value="vietnamese">Vietnamese</option>
+                        </select>
+                    </div>
+
+                    <div class="filter-group">
+                        <label for="gen-country"><i class="fa-solid fa-earth-americas"></i> Country (31 Countries)</label>
+                        <select id="gen-country">
+                            <option value="au">Australia</option>
+                            <option value="as">Austria</option>
+                            <option value="bg">Belgium</option>
+                            <option value="br">Brazil</option>
+                            <option value="ca">Canada</option>
+                            <option value="cyen">Cyprus (Anglicized)</option>
+                            <option value="cygk">Cyprus (Greek)</option>
+                            <option value="cz">Czech Republic</option>
+                            <option value="dk">Denmark</option>
+                            <option value="ee">Estonia</option>
+                            <option value="fi">Finland</option>
+                            <option value="fr">France</option>
+                            <option value="gr">Germany</option>
+                            <option value="gl">Greenland</option>
+                            <option value="hu">Hungary</option>
+                            <option value="is">Iceland</option>
+                            <option value="it">Italy</option>
+                            <option value="nl">Netherlands</option>
+                            <option value="nz">New Zealand</option>
+                            <option value="no">Norway</option>
+                            <option value="pl">Poland</option>
+                            <option value="pt">Portugal</option>
+                            <option value="sl">Slovenia</option>
+                            <option value="za">South Africa</option>
+                            <option value="sp">Spain</option>
+                            <option value="sw">Sweden</option>
+                            <option value="sz">Switzerland</option>
+                            <option value="tn">Tunisia</option>
+                            <option value="uk">United Kingdom</option>
+                            <option value="us" selected="selected">United States</option>
+                            <option value="uy">Uruguay</option>
+                        </select>
+                    </div>
+
+                    <div class="filter-group button-group">
+                        <button type="submit" id="generate-btn" class="btn btn-primary">
+                            <i class="fa-solid fa-arrows-rotate"></i> Generate
+                        </button>
+                        <button type="button" id="copy-all-btn" class="btn btn-outline">
+                            <i class="fa-solid fa-copy"></i> Copy All
+                        </button>
+                    </div>
+                </form>
+                
+                <!-- FakeNameGenerator Notice -->
+                <div class="nameset-apply-notice" id="nameset-apply-notice">
+                    <i class="fa-solid fa-circle-info"></i> These name sets apply to this country: <span id="applicable-namesets" class="highlight-text">American, Hispanic</span>
+                </div>
+            </div>
+
+            <!-- MODE 1: NORMAL MODE (MODERN CARDS VIEW) -->
+            <div id="view-normal-container" class="identity-layout">
+                <!-- Avatar & Hero Info Card -->
+                <div class="left-column">
+                    <div class="card profile-hero-card">
+                        <div class="avatar-box">
+                            <div class="avatar-circle" id="profile-avatar">
+                                <i class="fa-solid fa-user"></i>
+                            </div>
+                            <span class="gender-badge" id="profile-gender-badge">Female</span>
+                        </div>
+                        <h2 id="profile-fullname">Dolly D. Monroe</h2>
+                        <p class="profile-address" id="profile-hero-address"><i class="fa-solid fa-location-dot"></i> 3423 Mandan Road, Columbia, MO 65201</p>
+                        
+                        <div class="hero-quick-actions">
+                            <button class="btn btn-sm btn-accent send-to-sheet-btn">
+                                <i class="fa-solid fa-plus"></i> Add to Sheet
+                            </button>
+                            <button class="btn btn-sm btn-secondary send-to-notepad-btn">
+                                <i class="fa-solid fa-file-code"></i> Send to Notepad++
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Sidebar Ad Slot (300x250) -->
+                    <div class="ad-container ad-sidebar margin-top">
+                        <div class="ad-label">Advertisement</div>
+                        <!-- Google AdSense Live Code Block 2: Sidebar Rectangular (2715066312) -->
+                        <div class="ad-code-wrapper ad-rectangle">
+                            <ins class="adsbygoogle"
+                                 style="display:block"
+                                 data-ad-client="ca-pub-4741085747836613"
+                                 data-ad-slot="2715066312"
+                                 data-ad-format="auto"
+                                 data-full-width-responsive="true"></ins>
+                            <script>
+                                 (adsbygoogle = window.adsbygoogle || []).push({});
+                            </script>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Grid of Categorized Details -->
+                <div class="identity-details-grid">
+
+                    <!-- Personal Details -->
+                    <div class="card detail-section">
+                        <h3><i class="fa-solid fa-id-card"></i> Personal Information</h3>
+                        <div class="detail-row">
+                            <span class="label">Full Name</span>
+                            <span class="value" id="val-fullname">Dolly D. Monroe</span>
+                            <button class="copy-btn" data-target="val-fullname"><i class="fa-regular fa-copy"></i></button>
+                        </div>
+                        <div class="detail-row">
+                            <span class="label">Street Address</span>
+                            <span class="value" id="val-address">3423 Mandan Road, Columbia, MO 65201</span>
+                            <button class="copy-btn" data-target="val-address"><i class="fa-regular fa-copy"></i></button>
+                        </div>
+                        <div class="detail-row">
+                            <span class="label">Mother's Maiden Name</span>
+                            <span class="value" id="val-maiden">Lang</span>
+                            <button class="copy-btn" data-target="val-maiden"><i class="fa-regular fa-copy"></i></button>
+                        </div>
+                        <div class="detail-row">
+                            <span class="label" id="label-val-ssn">SSN / National ID</span>
+                            <span class="value" id="val-ssn">494-90-8219</span>
+                            <button class="copy-btn" data-target="val-ssn"><i class="fa-regular fa-copy"></i></button>
+                        </div>
+                        <div class="detail-row">
+                            <span class="label">Geo Coordinates</span>
+                            <span class="value" id="val-geo">38.893103, -92.249388</span>
+                            <button class="copy-btn" data-target="val-geo"><i class="fa-regular fa-copy"></i></button>
+                        </div>
+                        <div class="detail-row">
+                            <span class="label">QR Code Identity</span>
+                            <span class="value highlight" id="val-qr">Click to view QR Code</span>
+                            <button class="copy-btn" data-target="val-qr"><i class="fa-regular fa-copy"></i></button>
+                        </div>
+                    </div>
+
+                    <!-- Phone & Age -->
+                    <div class="card detail-section">
+                        <h3><i class="fa-solid fa-phone"></i> Contact & Birthday</h3>
+                        <div class="detail-row">
+                            <span class="label">Phone Number</span>
+                            <span class="value" id="val-phone">573-876-4464</span>
+                            <button class="copy-btn" data-target="val-phone"><i class="fa-regular fa-copy"></i></button>
+                        </div>
+                        <div class="detail-row">
+                            <span class="label">Country Code</span>
+                            <span class="value" id="val-countrycode">+1</span>
+                            <button class="copy-btn" data-target="val-countrycode"><i class="fa-regular fa-copy"></i></button>
+                        </div>
+                        <div class="detail-row">
+                            <span class="label">Birthday</span>
+                            <span class="value" id="val-birthday">February 14, 1992</span>
+                            <button class="copy-btn" data-target="val-birthday"><i class="fa-regular fa-copy"></i></button>
+                        </div>
+                        <div class="detail-row">
+                            <span class="label">Age</span>
+                            <span class="value" id="val-age">34 years old</span>
+                            <button class="copy-btn" data-target="val-age"><i class="fa-regular fa-copy"></i></button>
+                        </div>
+                        <div class="detail-row">
+                            <span class="label">Tropical Zodiac</span>
+                            <span class="value" id="val-zodiac">Aquarius</span>
+                            <button class="copy-btn" data-target="val-zodiac"><i class="fa-regular fa-copy"></i></button>
+                        </div>
+                    </div>
+
+                    <!-- Online & Credentials -->
+                    <div class="card detail-section">
+                        <h3><i class="fa-solid fa-globe"></i> Online Credentials</h3>
+                        <div class="detail-row">
+                            <span class="label">Email Address</span>
+                            <span class="value highlight" id="val-email">DollyDMonroe@jourrapide.com</span>
+                            <button class="copy-btn" data-target="val-email"><i class="fa-regular fa-copy"></i></button>
+                        </div>
+                        <div class="detail-row">
+                            <span class="label">Username</span>
+                            <span class="value" id="val-username">Ocespeat48</span>
+                            <button class="copy-btn" data-target="val-username"><i class="fa-regular fa-copy"></i></button>
+                        </div>
+                        <div class="detail-row">
+                            <span class="label">Password</span>
+                            <span class="value" id="val-password">faiRaGo4uak</span>
+                            <button class="copy-btn" data-target="val-password"><i class="fa-regular fa-copy"></i></button>
+                        </div>
+                        <div class="detail-row">
+                            <span class="label">Website</span>
+                            <span class="value" id="val-website">catalintomescu.com</span>
+                            <button class="copy-btn" data-target="val-website"><i class="fa-regular fa-copy"></i></button>
+                        </div>
+                        <div class="detail-row">
+                            <span class="label">User Agent</span>
+                            <span class="value truncate" id="val-useragent">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36</span>
+                            <button class="copy-btn" data-target="val-useragent"><i class="fa-regular fa-copy"></i></button>
+                        </div>
+                    </div>
+
+                    <!-- Finance & Cards -->
+                    <div class="card detail-section">
+                        <h3><i class="fa-solid fa-credit-card"></i> Financial Details</h3>
+                        <div class="detail-row">
+                            <span class="label">Credit Card</span>
+                            <span class="value" id="val-card">4532 0245 9395 6468 (Visa)</span>
+                            <button class="copy-btn" data-target="val-card"><i class="fa-regular fa-copy"></i></button>
+                        </div>
+                        <div class="detail-row">
+                            <span class="label">Expires</span>
+                            <span class="value" id="val-expires">11/2030</span>
+                            <button class="copy-btn" data-target="val-expires"><i class="fa-regular fa-copy"></i></button>
+                        </div>
+                        <div class="detail-row">
+                            <span class="label">CVV2</span>
+                            <span class="value" id="val-cvv">260</span>
+                            <button class="copy-btn" data-target="val-cvv"><i class="fa-regular fa-copy"></i></button>
+                        </div>
+                        <div class="detail-row">
+                            <span class="label">Company</span>
+                            <span class="value" id="val-company">Galaxy Tech Solutions</span>
+                            <button class="copy-btn" data-target="val-company"><i class="fa-regular fa-copy"></i></button>
+                        </div>
+                        <div class="detail-row">
+                            <span class="label">Occupation</span>
+                            <span class="value" id="val-occupation">Network Administrator</span>
+                            <button class="copy-btn" data-target="val-occupation"><i class="fa-regular fa-copy"></i></button>
+                        </div>
+                    </div>
+
+                    <!-- Physical & Tracking & Miscellaneous -->
+                    <div class="card detail-section">
+                        <h3><i class="fa-solid fa-boxes-packing"></i> Tracking, Vehicle & Other</h3>
+                        <div class="detail-row">
+                            <span class="label">Height & Weight</span>
+                            <span class="value" id="val-physical">5' 6" (168 cm) / 145 lbs (65 kg)</span>
+                            <button class="copy-btn" data-target="val-physical"><i class="fa-regular fa-copy"></i></button>
+                        </div>
+                        <div class="detail-row">
+                            <span class="label">Blood Type</span>
+                            <span class="value" id="val-blood">AB+</span>
+                            <button class="copy-btn" data-target="val-blood"><i class="fa-regular fa-copy"></i></button>
+                        </div>
+                        <div class="detail-row">
+                            <span class="label">UPS Tracking</span>
+                            <span class="value" id="val-ups">1Z 279 150 49 9225 638 4</span>
+                            <button class="copy-btn" data-target="val-ups"><i class="fa-regular fa-copy"></i></button>
+                        </div>
+                        <div class="detail-row">
+                            <span class="label">Western Union MTCN</span>
+                            <span class="value" id="val-western">7856909438</span>
+                            <button class="copy-btn" data-target="val-western"><i class="fa-regular fa-copy"></i></button>
+                        </div>
+                        <div class="detail-row">
+                            <span class="label">MoneyGram MTCN</span>
+                            <span class="value" id="val-moneygram">39308966</span>
+                            <button class="copy-btn" data-target="val-moneygram"><i class="fa-regular fa-copy"></i></button>
+                        </div>
+                        <div class="detail-row">
+                            <span class="label">Favorite Color</span>
+                            <span class="value" id="val-color">Blue</span>
+                            <button class="copy-btn" data-target="val-color"><i class="fa-regular fa-copy"></i></button>
+                        </div>
+                        <div class="detail-row">
+                            <span class="label">Vehicle</span>
+                            <span class="value" id="val-vehicle">1994 Chevrolet Beretta</span>
+                            <button class="copy-btn" data-target="val-vehicle"><i class="fa-regular fa-copy"></i></button>
+                        </div>
+                        <div class="detail-row">
+                            <span class="label">GUID</span>
+                            <span class="value" id="val-guid">4367a991-0997-4180-bd1a-fecc067f4dd1</span>
+                            <button class="copy-btn" data-target="val-guid"><i class="fa-regular fa-copy"></i></button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- MODE 2: WORKONLY MODE (CLEAN UNMIXED AVATAR & 3-LINE ADDRESS LAYOUT) -->
+            <div id="view-workonly-container" class="fng-workonly-layout" style="display: none;">
+                <div class="fng-main-heading">
+                    <h2>Your Randomly Generated Identity</h2>
+                </div>
+
+                <div class="fng-identity-content">
+                    <!-- Left Silhouette Box -->
+                    <div class="fng-left-col">
+                        <div class="fng-avatar-wrapper">
+                            <div class="fng-avatar-img" id="wo-avatar-box">
+                                <i class="fa-solid fa-user-secret"></i>
+                            </div>
+                        </div>
+                        <div class="fng-login-notice">
+                            <p>Logged in users can view full social security numbers and can save their fake names to use later.</p>
+                            <div class="fng-gplus-btn">
+                                <i class="fa-brands fa-google-plus-g"></i> Sign in
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Identity Text Fields -->
+                    <div class="fng-right-col">
+                        <!-- Hero Name & Exact 3-Line Address Section -->
+                        <div class="fng-hero-info">
+                            <h3 id="wo-fullname" class="wo-name-title">Eric M. Moore</h3>
+                            <div class="wo-address-box">
+                                <!-- Line 1: Street Address -->
+                                <div class="wo-address-row">
+                                    <span id="wo-street-val">38 Mill Lane</span> 
+                                    <button class="copy-btn" data-target="wo-street-val" title="Copy Street"><i class="fa-regular fa-copy"></i></button>
+                                </div>
+                                <!-- Line 2: Town / City -->
+                                <div class="wo-address-row">
+                                    <span id="wo-city-val">CORRIEVORRIE</span> 
+                                    <button class="copy-btn" data-target="wo-city-val" title="Copy City"><i class="fa-regular fa-copy"></i></button>
+                                </div>
+                                <!-- Line 3: Postcode / ZIP / State -->
+                                <div class="wo-address-row">
+                                    <span id="wo-zip-val">IV13 4SQ</span> 
+                                    <button class="copy-btn" data-target="wo-zip-val" title="Copy Zip/Postcode"><i class="fa-regular fa-copy"></i></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="fng-fields-list">
+                            <!-- PHONE & CONTACT SECTION -->
+                            <h4 class="fng-section-header">PHONE & CONTACT</h4>
+                            <div class="fng-field-row">
+                                <span class="fng-label">Phone</span>
+                                <span class="fng-val" id="wo-phone">070 8274 9174</span>
+                                <button class="copy-btn" data-target="wo-phone"><i class="fa-regular fa-copy"></i></button>
+                            </div>
+                            <div class="fng-field-row">
+                                <span class="fng-label">Country code</span>
+                                <span class="fng-val" id="wo-countrycode">44</span>
+                                <button class="copy-btn" data-target="wo-countrycode"><i class="fa-regular fa-copy"></i></button>
+                            </div>
+                            <div class="fng-field-row">
+                                <span class="fng-label">Email Address</span>
+                                <span class="fng-val" id="wo-email">EricMMoore@jourrapide.com</span>
+                                <button class="copy-btn" data-target="wo-email"><i class="fa-regular fa-copy"></i></button>
+                            </div>
+
+                            <!-- BIRTHDAY SECTION -->
+                            <h4 class="fng-section-header">BIRTHDAY</h4>
+                            <div class="fng-field-row">
+                                <span class="fng-label">Birthday</span>
+                                <span class="fng-val" id="wo-birthday">February 3, 1988</span>
+                                <button class="copy-btn" data-target="wo-birthday"><i class="fa-regular fa-copy"></i></button>
+                            </div>
+                            <div class="fng-field-row">
+                                <span class="fng-label">Age</span>
+                                <span class="fng-val" id="wo-age">38 years old</span>
+                                <button class="copy-btn" data-target="wo-age"><i class="fa-regular fa-copy"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Leaderboard Ad Slot (728x90) -->
+            <div class="ad-container ad-leaderboard margin-top">
+                <div class="ad-label">Advertisement</div>
+                <!-- Google AdSense Live Code Block 3: Bottom Banner (4179211285) -->
+                <div class="ad-code-wrapper">
+                    <ins class="adsbygoogle"
+                         style="display:block"
+                         data-ad-client="ca-pub-4741085747836613"
+                         data-ad-slot="4179211285"
+                         data-ad-format="auto"
+                         data-full-width-responsive="true"></ins>
+                    <script>
+                         (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                </div>
+            </div>
+        </section>
+
+        <!-- TAB 2: GOOGLE SHEET (Live URL Integration & Data Management) -->
+        <section id="google-sheet-tab" class="tab-content">
+            <div class="page-title">
+                <h1>Google Sheet Integration & Data Suite</h1>
+                <p>Paste your Google Sheet link to load and edit your live Google Sheet directly inside this page, or manage generated data locally.</p>
+            </div>
+
+            <!-- Live Google Sheet Embed Box -->
+            <div class="card margin-bottom">
+                <h3><i class="fa-solid fa-link"></i> Live Google Sheet URL Linker</h3>
+                <p class="text-muted">Paste your shareable Google Sheet link below (Ensure your Google Sheet link access is set to "Anyone with link can view/edit" or Published to Web).</p>
+
+                <div class="sheet-url-bar margin-top">
+                    <input type="url" id="gsheet-url-input" placeholder="https://docs.google.com/spreadsheets/d/YOUR_SHEET_ID/edit..." />
+                    <button id="load-gsheet-btn" class="btn btn-primary"><i class="fa-solid fa-plug"></i> Load Live Sheet</button>
+                </div>
+
+                <div id="gsheet-iframe-wrapper" class="gsheet-wrapper margin-top">
+                    <div class="gsheet-placeholder" id="gsheet-placeholder-msg">
+                        <i class="fa-solid fa-file-excel gsheet-big-icon"></i>
+                        <h4>No Live Google Sheet Connected</h4>
+                        <p>Paste your Google Sheet URL above and click "Load Live Sheet" to view and work on your Google Sheet directly inside this tab!</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Local Data Table & Export -->
+            <div class="card">
+                <h3><i class="fa-solid fa-table-list"></i> Generated Profiles Local Sheet</h3>
+                <div class="toolbar margin-top">
+                    <div class="toolbar-left">
+                        <button id="export-csv-btn" class="btn btn-primary"><i class="fa-solid fa-file-csv"></i> Download CSV</button>
+                        <button id="copy-tsv-btn" class="btn btn-secondary"><i class="fa-solid fa-table"></i> Copy TSV for Google Sheet</button>
+                        <button id="add-current-to-sheet" class="btn btn-accent"><i class="fa-solid fa-plus"></i> Add Current Profile</button>
+                    </div>
+                    <div class="toolbar-right">
+                        <button id="clear-sheet-btn" class="btn btn-danger-outline"><i class="fa-solid fa-trash-can"></i> Clear Table</button>
+                    </div>
+                </div>
+
+                <div class="table-responsive">
+                    <table class="data-table" id="sheet-table">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Name</th>
+                                <th>Gender</th>
+                                <th>Email</th>
+                                <th>Phone</th>
+                                <th>Address</th>
+                                <th>SSN</th>
+                                <th>Credit Card</th>
+                                <th>Vehicle</th>
+                                <th>User Agent</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="sheet-table-body">
+                            <!-- Populated dynamically -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- TAB 3: USER AGENT GENERATOR -->
+        <section id="user-agent-tab" class="tab-content">
+            <div class="page-title">
+                <h1>Authentic User Agent Generator</h1>
+                <p>Generate fresh, 100% real browser user agent strings for automation, anti-detect browser testing, and CPA networks.</p>
+            </div>
+
+            <div class="card">
+                <div class="ua-controls">
+                    <div class="filter-group">
+                        <label for="ua-os"><i class="fa-solid fa-desktop"></i> Operating System</label>
+                        <select id="ua-os">
+                            <option value="all">All Platforms</option>
+                            <option value="windows">Windows</option>
+                            <option value="mac">macOS</option>
+                            <option value="android">Android</option>
+                            <option value="ios">iOS / iPhone</option>
+                            <option value="linux">Linux</option>
+                        </select>
+                    </div>
+
+                    <div class="filter-group">
+                        <label for="ua-browser"><i class="fa-brands fa-chrome"></i> Browser</label>
+                        <select id="ua-browser">
+                            <option value="all">All Browsers</option>
+                            <option value="chrome">Google Chrome</option>
+                            <option value="firefox">Mozilla Firefox</option>
+                            <option value="safari">Apple Safari</option>
+                            <option value="edge">Microsoft Edge</option>
+                        </select>
+                    </div>
+
+                    <div class="filter-group">
+                        <label for="ua-count"><i class="fa-solid fa-list-ol"></i> Quantity (Up to 200)</label>
+                        <select id="ua-count">
+                            <option value="5">5 User Agents</option>
+                            <option value="10" selected>10 User Agents</option>
+                            <option value="25">25 User Agents</option>
+                            <option value="50">50 User Agents</option>
+                            <option value="100">100 User Agents</option>
+                            <option value="150">150 User Agents</option>
+                            <option value="200">200 User Agents</option>
+                        </select>
+                    </div>
+
+                    <div class="filter-group button-group">
+                        <button id="generate-ua-btn" class="btn btn-primary"><i class="fa-solid fa-arrows-rotate"></i> Generate List</button>
+                        <button id="copy-ua-list-btn" class="btn btn-secondary"><i class="fa-solid fa-copy"></i> Copy All</button>
+                    </div>
+                </div>
+
+                <div class="ua-output-box margin-top">
+                    <textarea id="ua-output-area" rows="12" placeholder="Generated User Agents will appear here..."></textarea>
+                </div>
+            </div>
+        </section>
+
+        <!-- TAB 4: NOTEPAD++ MULTI-TAB EDITOR -->
+        <section id="notepad-tab" class="tab-content">
+            <div class="page-title">
+                <h1>Notepad++ Web Edition</h1>
+                <p>Full-featured multi-tab code & text editor inspired by Notepad++ with line numbers, search/replace, tab pinning & quick rename.</p>
+            </div>
+
+            <div class="npp-window card">
+                <!-- Notepad++ Main Menu Bar -->
+                <div class="npp-menu-bar">
+                    <span><i class="fa-solid fa-file"></i> File</span>
+                    <span><i class="fa-solid fa-pen-to-square"></i> Edit</span>
+                    <span><i class="fa-solid fa-magnifying-glass"></i> Search</span>
+                    <span><i class="fa-solid fa-eye"></i> View</span>
+                    <span><i class="fa-solid fa-code"></i> Language</span>
+                    <span><i class="fa-solid fa-gear"></i> Settings</span>
+                </div>
+
+                <!-- Notepad++ Icon Action Toolbar -->
+                <div class="npp-toolbar">
+                    <button id="npp-btn-new" title="New File (Ctrl+N)"><i class="fa-solid fa-file-circle-plus"></i></button>
+                    <button id="npp-btn-open" title="Open File (Ctrl+O)"><i class="fa-solid fa-folder-open"></i></button>
+                    <input type="file" id="npp-file-input" style="display:none;" />
+                    <button id="npp-btn-save" title="Save File (Ctrl+S)"><i class="fa-solid fa-floppy-disk"></i></button>
+                    <button id="npp-btn-save-all" title="Save All"><i class="fa-solid fa-boxes-packing"></i></button>
+                    <span class="npp-divider"></span>
+                    <button id="npp-btn-rename" title="Rename Active Tab"><i class="fa-solid fa-pen"></i></button>
+                    <button id="npp-btn-pin" title="Pin / Unpin Active Tab"><i class="fa-solid fa-thumbtack"></i></button>
+                    <span class="npp-divider"></span>
+                    <button id="npp-btn-copy" title="Copy All"><i class="fa-solid fa-copy"></i></button>
+                    <button id="npp-btn-clear" title="Clear Editor"><i class="fa-solid fa-trash-can"></i></button>
+                    <button id="npp-btn-insert-profile" title="Insert Current Profile Data"><i class="fa-solid fa-user-plus"></i></button>
+                    <span class="npp-divider"></span>
+                    <button id="npp-btn-search" title="Search / Replace"><i class="fa-solid fa-magnifying-glass-arrow-right"></i></button>
+                    <button id="npp-btn-zoom-in" title="Zoom In"><i class="fa-solid fa-magnifying-glass-plus"></i></button>
+                    <button id="npp-btn-zoom-out" title="Zoom Out"><i class="fa-solid fa-magnifying-glass-minus"></i></button>
+                </div>
+
+                <!-- Search/Replace Bar (Toggleable) -->
+                <div id="npp-search-bar" class="npp-search-bar" style="display: none;">
+                    <input type="text" id="npp-search-input" placeholder="Find text..." />
+                    <input type="text" id="npp-replace-input" placeholder="Replace with..." />
+                    <button id="npp-do-replace" class="btn btn-sm btn-primary">Replace</button>
+                    <button id="npp-do-replace-all" class="btn btn-sm btn-secondary">Replace All</button>
+                    <button id="npp-close-search" class="btn btn-sm btn-outline"><i class="fa-solid fa-xmark"></i></button>
+                </div>
+
+                <!-- Notepad++ Document Tabs Header -->
+                <div class="npp-tabs-bar" id="npp-tabs-bar">
+                    <!-- Dynamic Document Tabs populated via JS -->
+                    <button id="npp-add-tab-btn" class="npp-add-tab" title="New Document"><i class="fa-solid fa-plus"></i></button>
+                </div>
+
+                <!-- Notepad++ Code Editor Canvas with Line Numbers -->
+                <div class="npp-editor-wrapper">
+                    <div class="npp-line-numbers" id="npp-line-numbers">1</div>
+                    <textarea id="npp-editor-textarea" class="npp-textarea" spellcheck="false" placeholder="Start typing or editing your code/notes here..."></textarea>
+                </div>
+
+                <!-- Notepad++ Bottom Status Bar -->
+                <div class="npp-status-bar">
+                    <span id="npp-stat-docname">new 1.txt</span>
+                    <span id="npp-stat-lines">Length: 0 lines | 0 chars</span>
+                    <span id="npp-stat-pos">Ln: 1  Col: 1</span>
+                    <span>UTF-8</span>
+                    <span>Windows (CR LF)</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- TAB 5: DYNAMIC LEGAL & DOCUMENTATION PAGE -->
+        <section id="faq-tab" class="tab-content">
+            <div class="fng-workonly-layout fng-doc-layout">
+                <!-- Dynamic Title Banner -->
+                <div class="fng-main-heading">
+                    <h2 id="doc-dynamic-heading">Terms of Service — Legal Terms & Agreements</h2>
+                </div>
+
+                <!-- Document Quick Selector Sub-Navigation Bar -->
+                <div class="doc-subnav-bar">
+                    <button class="doc-nav-btn active" data-target="doc-terms-of-service"><i class="fa-solid fa-file-contract"></i> Terms of Service</button>
+                    <button class="doc-nav-btn" data-target="doc-license-agreement"><i class="fa-solid fa-certificate"></i> License Agreement</button>
+                    <button class="doc-nav-btn" data-target="doc-privacy-policy"><i class="fa-solid fa-shield-halved"></i> Privacy Policy</button>
+                    <button class="doc-nav-btn" data-target="doc-overview"><i class="fa-solid fa-book-open"></i> Full System Guide</button>
+                </div>
+
+                <div class="fng-doc-content">
+
+                    <!-- DEDICATED DISTINCT LEGAL SECTIONS -->
+                    <div class="fng-doc-section legal-block active" id="doc-terms-of-service">
+                        <h3><i class="fa-solid fa-file-contract"></i> Terms of Service (ToS)</h3>
+                        <p>By accessing or using Identity Suite PRO, you agree to comply with and be bound by these Terms of Service:</p>
+                        <ul>
+                            <li><strong>Acceptable Use:</strong> You agree to use generated identities strictly for lawful purposes, such as database testing, software QA, privacy preservation, and legitimate marketing campaigns.</li>
+                            <li><strong>Prohibited Conduct:</strong> You may not use generated credentials to commit identity theft, fraudulent bank transactions, illegal impersonation, or unauthorized access to third-party accounts.</li>
+                            <li><strong>Service Availability:</strong> We provide this toolkit "as-is" without warranty of uninterrupted availability or absolute fitness for specific non-standard environments.</li>
+                        </ul>
+                    </div>
+
+                    <div class="fng-doc-section legal-block" id="doc-license-agreement">
+                        <h3><i class="fa-solid fa-certificate"></i> End User License Agreement (EULA)</h3>
+                        <p>This License Agreement grants you non-exclusive rights to operate and integrate Identity Suite PRO:</p>
+                        <ul>
+                            <li><strong>Grant of License:</strong> You are granted a free, non-transferable license to generate synthetic profiles, download CSV/TSV outputs, and embed live Google Sheets for personal and professional development.</li>
+                            <li><strong>Intellectual Property:</strong> The underlying algorithms, User Agent database scripts, and web UI remain the intellectual property of Identity Suite PRO.</li>
+                            <li><strong>No Warranty:</strong> All synthetic identity outputs are generated algorithmically. No real financial credit lines or real-world identity rights are conveyed by this tool.</li>
+                        </ul>
+                    </div>
+
+                    <div class="fng-doc-section legal-block" id="doc-privacy-policy">
+                        <h3><i class="fa-solid fa-shield-halved"></i> Privacy Policy</h3>
+                        <p>Our commitment to data privacy and user anonymity:</p>
+                        <ul>
+                            <li><strong>Zero Personal Data Harvested:</strong> Identity Suite PRO does not harvest, store, or transmit your private browser information to external servers.</li>
+                            <li><strong>100% Synthetic Data:</strong> All generated profile identities, names, social security numbers, and credit cards are mathematically produced in memory and represent no living or deceased individuals.</li>
+                            <li><strong>Local Browser Storage:</strong> Local data saved in Notepad++ Web or local table sheets remains stored strictly within your own browser's `localStorage`.</li>
+                        </ul>
+                    </div>
+
+                    <div class="fng-doc-section legal-block" id="doc-overview">
+                        <h3><i class="fa-solid fa-book-open"></i> Full System Documentation & Guide</h3>
+                        <p><strong>Identity Suite PRO</strong> is an advanced, high-performance web utility built specifically for software developers, QA test engineers, data privacy researchers, and CPA marketing professionals. It generates realistic, mathematically compliant profile identities based on official country-specific formatting standards without referencing any real-world person.</p>
+                        
+                        <p><strong>Data Validity & Algorithmic Parity:</strong></p>
+                        <ul>
+                            <li><strong>Credit Card Numbers:</strong> All card numbers (Visa, Mastercard, American Express, Discover) are computed via the official <strong>Luhn Checksum Algorithm (Modulus 10)</strong>, ensuring 100% validity for form validation testing.</li>
+                            <li><strong>Country National IDs:</strong> System dynamically assigns official national ID nomenclature per region (e.g., SSN for US, National Insurance Number for UK, SIN for Canada, TFN for Australia, and Steueridentifikationsnummer for Germany).</li>
+                            <li><strong>Geographic Consistency:</strong> Addresses correlate real area calling codes, valid postal formats, and realistic municipality structures across 31 countries.</li>
+                            <li><strong>User Agent Database:</strong> User Agent strings are compiled from real active web browsers across Windows, macOS, Android, iOS, and Linux platforms.</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- CLASSIC FOOTER SECTION MATCHING FAKENAMEGENERATOR STRUCTURE -->
+    <footer class="fng-footer">
+        <div class="fng-footer-container">
+            <!-- Column 1: Shortcuts -->
+            <div class="fng-footer-col">
+                <h4 class="fng-footer-title">Shortcuts</h4>
+                <div class="fng-shortcuts-grid">
+                    <div class="fng-shortcuts-col">
+                        <a href="#generator">Identity Engine</a>
+                        <a href="#google-sheet">Google Sheet Sync</a>
+                        <a href="#user-agent">User Agent Studio</a>
+                        <a href="#notepad">Notepad++ Web</a>
+                    </div>
+                    <div class="fng-shortcuts-col">
+                        <a href="#doc-overview">FAQ & Guide</a>
+                        <a href="#generator">WorkOnly Mode</a>
+                        <a href="#google-sheet">CSV Exporter</a>
+                        <a href="#doc-privacy-policy">Privacy Policy</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Column 2: Latest on the blog -->
+            <div class="fng-footer-col">
+                <h4 class="fng-footer-title">Latest Updates & Changelog</h4>
+                <ul class="fng-blog-list">
+                    <li><span class="fng-date">Feb 10</span> <a href="#doc-overview">Announcing Identity Suite PRO v2.0</a></li>
+                    <li><span class="fng-date">Feb 4</span> <a href="#generator">UK National Insurance number format updated</a></li>
+                    <li><span class="fng-date">Jan 7</span> <a href="#google-sheet">Live Google Sheet URL embed engine added</a></li>
+                    <li><span class="fng-date">Aug 10</span> <a href="#user-agent">Real browser user agent database updated</a></li>
+                    <li><span class="fng-date">May 31</span> <a href="#generator">37 Name Sets and 31 Countries full parity</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 3: Feature Summary -->
+            <div class="fng-footer-col">
+                <h4 class="fng-footer-title">The Most Advanced CPA & Identity Suite</h4>
+                <p class="fng-footer-desc">
+                    With 37 name sets and 31 supported countries, Identity Suite PRO is the most advanced identity and CPA automation toolkit on the internet. Generate realistic names, 3-line addresses, national IDs, Luhn-valid credit card numbers, and authentic user agents 100% free.
+                </p>
+            </div>
+        </div>
+
+        <!-- Footer Bottom Legal & Language Bar -->
+        <div class="fng-footer-bottom">
+            <div class="fng-lang-selector">
+                <label for="footer-lang-select">Language:</label>
+                <select id="footer-lang-select">
+                    <option value="en" selected>English</option>
+                    <option value="es">Español</option>
+                    <option value="de">Deutsch</option>
+                    <option value="fr">Français</option>
+                    <option value="it">Italiano</option>
+                </select>
+            </div>
+            <div class="fng-legal-links">
+                — <a href="#doc-terms-of-service">Terms of Service</a> — <a href="#doc-license-agreement">License Agreement</a> — <a href="#doc-privacy-policy">Privacy Policy</a>
+            </div>
+            <div class="fng-copyright-text">
+                Copyright © 2006-2026 Identity Suite PRO. All rights reserved. Identity Suite PRO logo and trademarks belong to their respective owners.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Notification Container -->
+    <div id="toast-container"></div>
+
+    <script src="app.js"></script>
+</body>
+</html>
