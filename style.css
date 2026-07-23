@@ -72,7 +72,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    gap: 2rem;
+    gap: 1.5rem;
+    flex-wrap: wrap;
 }
 
 .logo {
@@ -118,6 +119,7 @@ body {
     display: flex;
     list-style: none;
     gap: 0.5rem;
+    flex-wrap: wrap;
 }
 
 .nav-links li a {
@@ -142,6 +144,25 @@ body {
     color: #ffffff;
     background: var(--primary);
     box-shadow: 0 4px 12px var(--primary-glow);
+}
+
+/* Glowing Highlight for Claim Free Rewards Tab */
+.nav-links li[data-tab="offers"] a {
+    background: rgba(239, 68, 68, 0.18);
+    border: 1px solid var(--primary);
+    color: #ffffff;
+    font-weight: 700;
+    animation: glowTab 2s infinite alternate;
+}
+
+.nav-links li[data-tab="offers"].active a {
+    background: var(--primary);
+    border-color: var(--primary);
+}
+
+@keyframes glowTab {
+    0% { box-shadow: 0 0 4px rgba(239, 68, 68, 0.3); }
+    100% { box-shadow: 0 0 14px rgba(239, 68, 68, 0.8); }
 }
 
 .nav-actions {
