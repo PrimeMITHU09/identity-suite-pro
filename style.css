@@ -91,6 +91,19 @@ body {
     color: #ffffff;
 }
 
+.brand-logo-img {
+    width: 36px;
+    height: 36px;
+    object-fit: contain;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(59, 130, 246, 0.4);
+    transition: transform 0.2s ease;
+}
+
+.logo:hover .brand-logo-img {
+    transform: scale(1.08);
+}
+
 .logo-icon {
     color: var(--primary);
     font-size: 1.6rem;

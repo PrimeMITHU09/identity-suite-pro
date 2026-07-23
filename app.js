@@ -1,5 +1,12 @@
 // Fake Name Generator - Complete 100% Feature-Parity & Country-Specific Identity Suite Logic
 
+// Register PWA Service Worker for Native App Installation Support
+if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+        navigator.serviceWorker.register('./sw.js').catch(err => console.log('SW registration failed:', err));
+    });
+}
+
 document.addEventListener('DOMContentLoaded', () => {
 
     // --- CURATED REALISTIC AVATAR PHOTO POOL (MALE & FEMALE) ---
